@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import localImage from "../../public/watch1.gif";
+import ventanaImage from "../../public/ventana4.gif";
+---
+<div class="grid gap-2 z-10">
+    <div class="flex flex-col z-40 place-items-center text-center scale-up-top backdrop-blur-sm p-3 rounded-lg">
+        <p class="text-white text-5xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-sans font-black text-ellipsis z-40 group changing-content glitch highlight-text">
+            Mauro Nievas
+        </p>
+        <p class="text-white text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-sans rotate-horizontal-center">
+            Full Stack Developer +7 years
+        </p>
+    </div>
+    <div class="z-10 text-white text-center mt-16">
+        <div class="scale-up-center mb-5">
+            <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-unit-4 min-w-unit-20 h-unit-10 gap-unit-2 rounded-medium [&amp;>svg]:max-w-[theme(spacing.unit-8)] data-[pressed=true]:scale-[0.97] transition-transform-colors motion-reduce:transition-none bg-primary text-primary-foreground text-sm sm:text-base md:text-xl md:w-32 md:h-18 lg:text-2xl lg:w-34 lg:h-18 xl:text-2xl xl:w-38 xl:h-12 2xl:text-2xl 2xl:w-40 2xl:h-14 button-hover mb-5 sm:mr-16 mr-5 scale-up-left" type="button">
+                Works
+            </button>
+            <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-unit-4 min-w-unit-20 h-unit-10 gap-unit-2 rounded-medium [&amp;>svg]:max-w-[theme(spacing.unit-8)] data-[pressed=true]:scale-[0.97] transition-transform-colors motion-reduce:transition-none bg-danger text-danger-foreground text-sm sm:text-base md:text-xl md:w-32 md:h-18 lg:text-2xl lg:w-34 lg:h-18 xl:text-2xl xl:w-38 xl:h-12 2xl:text-2xl 2xl:w-40 2xl:h-14 button-hover mt-5 scale-up-right" type="button">
+                Me
+            </button>
+            <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-unit-4 min-w-unit-20 h-unit-10 gap-unit-2 rounded-medium [&amp;>svg]:max-w-[theme(spacing.unit-8)] data-[pressed=true]:scale-[0.97] transition-transform-colors motion-reduce:transition-none bg-primary text-primary-foreground text-sm sm:text-base md:text-xl md:w-32 md:h-18 lg:text-2xl lg:w-34 lg:h-18 xl:text-2xl xl:w-38 xl:h-12 2xl:text-2xl 2xl:w-40 2xl:h-14 button-hover mt-5 ml-5 sm:ml-16 scale-up-right" type="button">
+                Projects
+            </button>
+        </div>
+    </div>
+
+    <!-- Contenedor centrado para las imágenes -->
+    <div class="flex justify-center items-center w-full pt-[26vh]">
+        <Image src={localImage} alt="Picture of the author" class="absolute rounded-lg z-9 mx-auto" />
+        <Image src={ventanaImage} alt="Picture of the author" class="absolute rounded-lg z-9 opacity-10 mx-auto" />
+    </div>
+</div>
